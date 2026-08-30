@@ -1,0 +1,49 @@
+name: 逆天言论HUB | Contribution
+description: 向逆天言论HUB 贡献图片 / 申请贡献者权限 / 请求移除
+labels:
+  - 逆天言论HUB
+body:
+  - type: markdown
+    attributes:
+      value: |
+        向 [逆天言论HUB](https://github.com/ChenRay-team/ChenRay-Docs/tree/main/逆天言论HUB) 提交内容请使用本表单。
+        该合集纯属娱乐，请勿上升到人身攻击。
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: 请求类型
+      options:
+        - 贡献图片 / 逆天发言
+        - 申请贡献者权限
+        - 请求移除我的记录
+    validations:
+      required: true
+  - type: input
+    id: nickname
+    attributes:
+      label: 游戏 ID / 昵称
+      description: 你的名字；如涉及他人记录，请一并注明。
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: 内容说明
+      description: 贡献图片：图片内容 / 归属人物；申请权限：理由；请求移除：哪条记录。
+      placeholder: |
+        e.g. 贡献一张 angushushu 的语录截图，主题：xxx
+    validations:
+      required: true
+  - type: textarea
+    id: attachment
+    attributes:
+      label: 图片 / 附件
+      description: 贡献图片时请把图片拖拽到此处。
+      placeholder: 拖拽图片到此处。
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 确认
+      options:
+        - label: 我确认所提交内容真实，且该合集仅用于群内娱乐
+          required: true

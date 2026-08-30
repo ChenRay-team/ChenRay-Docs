@@ -32,6 +32,8 @@
 - **协作基建：** 新增 Issue 模板（规则问题反馈 / 功能建议）、PR 模板与 `dependabot.yml`（npm + GitHub Actions 依赖自动更新）
 - **仓库定位升级：** 仓库由"规则文档仓库"扩展为**服务器专用综合仓库**；新增 `服务器信息.md`（地址 / 版本 / 官方渠道）；规则文档统一存放于 `规则/` 目录
 - **Issue 表单重写：** 参考 [LeavesMC/Leaves](https://github.com/LeavesMC/Leaves) 改用 **GitHub Issue Forms（YAML 表单）**——`1-游戏问题反馈`、`2-违规举报`、`3-处罚申诉`、`4-规则问题反馈`、`5-功能建议`（markdown 引导 + 下拉选择 + 必填校验 + 复现步骤），配合 `config.yml` 联系渠道，并删除原 Markdown 版模板
+- **合并仓库：** 合并 [Outrageous-statement-Hub（逆天言论HUB）](https://github.com/ChenRay-team/Outrageous-statement-Hub) 至 `逆天言论HUB/` 文件夹，并适配其自动打包工作流（`.github/workflows/release-images.yml`，触发路径限定在该目录）
+- **Issue 表单补充：** 新增 `6-逆天言论HUB.yml` 表单（贡献图片 / 申请贡献者权限 / 请求移除），并在 README 增加提交入口
 
 ### 新增
 
