@@ -1,0 +1,17 @@
+{
+  "name": "chenray-rule",
+  "version": "3.1.0",
+  "private": true,
+  "description": "ChenRay 服务器官方规则文档仓库",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "lint": "markdownlint-cli2 \"**/*.md\"",
+    "check": "node scripts/check-references.mjs",
+    "verify": "npm run lint && npm run check",
+    "docs:build": "mkdocs build",
+    "docs:serve": "mkdocs serve"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.23.2"
+  }
+}

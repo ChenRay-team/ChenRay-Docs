@@ -1,0 +1,60 @@
+site_name: ChenRay 服务器规则
+site_description: ChenRay Minecraft 服务器官方规则文档
+site_url: https://chenray-team.github.io/ChenRay-Rule/
+repo_url: https://github.com/ChenRay-team/ChenRay-Rule
+repo_name: ChenRay-Rule
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到浅色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
+  - 玩家守则: ChenRay服务器玩家守则.md
+  - 管理员条例: ChenRay服务器管理员条例.md
+  - 地铁乘车管理条例: ChenRay服务器地铁乘车管理条例.md
+  - 省流版:
+      - 玩家守则省流版: 省流版/玩家守则省流版.md
+      - 管理员条例省流版: 省流版/管理员条例省流版.md
+      - 地铁乘车管理条例省流版: 省流版/地铁乘车管理条例省流版.md
+
+extra:
+  generator: false
