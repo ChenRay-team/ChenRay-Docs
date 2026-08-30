@@ -28,6 +28,8 @@
 - **README 更新：** 新增常见问题速查表，更新文档清单
 - **仓库结构升级：** 规则文档移入 `docs/` 目录并新增 `mkdocs.yml`（MkDocs Material）文档站配置；README 升级为徽章 + 文档矩阵 + 仓库结构说明
 - **基建完善：** 新增 `.editorconfig`、`.gitattributes`、`.gitignore`、`package.json`（npm scripts）与 `SECURITY.md`
+- **检查器升级：** `scripts/check-references.mjs` 升级为文档一致性检查器（编号引用 / 章节引用 / 内部链接 / 版本一致 / 头部规范共 5 类检查，支持彩色输出与 `--json`），并清理根目录重复文档副本
+- **协作基建：** 新增 Issue 模板（规则问题反馈 / 功能建议）、PR 模板与 `dependabot.yml`（npm + GitHub Actions 依赖自动更新）
 
 ### 新增
 

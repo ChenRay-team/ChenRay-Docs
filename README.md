@@ -59,11 +59,12 @@ graph TD
 │   ├── ChenRay服务器地铁乘车管理条例.md
 │   └── 省流版/               三份省流速查版
 ├── scripts/
-│   └── check-references.mjs 交叉引用自动检查
-├── .github/workflows/
-│   ├── lint.yml             markdownlint + 引用检查
-│   ├── pages.yml            文档站构建部署（GitHub Pages）
-│   └── release.yml          Release 产物（自包含 HTML 打包）
+│   └── check-references.mjs 文档一致性检查器（5 类检查）
+├── .github/
+│   ├── workflows/           CI 流水线（lint / pages / release）
+│   ├── ISSUE_TEMPLATE/      规则问题反馈、功能建议模板
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── dependabot.yml       依赖自动更新
 ├── README.md                本文件
 ├── CHANGELOG.md             版本演进记录
 ├── CONTRIBUTING.md          修订指南
@@ -77,7 +78,8 @@ graph TD
 - **修订流程：** 见 [CONTRIBUTING.md](CONTRIBUTING.md)，遵循"七日阳光流程"
 - **更新记录：** 见 [CHANGELOG.md](CHANGELOG.md)
 - **版本与许可：** 文档版本号见各文件头部；仓库许可见 [LICENSE](LICENSE)
-- **本地校验：** `npm run verify`（markdownlint + 交叉引用检查）、`npm run docs:serve`（本地预览文档站）
+- **本地校验：** `npm run verify`（markdownlint + 5 类一致性检查）、`npm run docs:serve`（本地预览文档站）
+- **贡献：** 规则问题或建议请提交 Issue（已配置模板）；提交 PR 请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 并勾选检查清单
 
 ---
 
