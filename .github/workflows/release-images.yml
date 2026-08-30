@@ -1,17 +1,17 @@
 name: 上传图片自动发布到 Releases
 
-# 每当有人向 main 分支的 逆天言论HUB 目录推送图片时（直接推送或 PR 合并），
+# 每当有人向 main 分支的 逆天言论 目录推送图片时（直接推送或 PR 合并），
 # 自动把全部图片打包并发布/更新到 Releases
 on:
   push:
     branches:
       - main
     paths:
-      - '逆天言论HUB/**/*.png'
-      - '逆天言论HUB/**/*.jpg'
-      - '逆天言论HUB/**/*.jpeg'
-      - '逆天言论HUB/**/*.gif'
-      - '逆天言论HUB/**/*.webp'
+      - '逆天言论/**/*.png'
+      - '逆天言论/**/*.jpg'
+      - '逆天言论/**/*.jpeg'
+      - '逆天言论/**/*.gif'
+      - '逆天言论/**/*.webp'
 
 permissions:
   contents: write
@@ -27,8 +27,8 @@ jobs:
       - name: 打包所有图片为 zip
         shell: bash
         run: |
-          # 收集逆天言论HUB 内全部图片文件（保留按人名的目录结构，排除 .git）
-          cd 逆天言论HUB
+          # 收集逆天言论 内全部图片文件（保留按人名的目录结构，排除 .git）
+          cd 逆天言论
           find . -type f \
             \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' \
                -o -name '*.gif' -o -name '*.webp' \) \
@@ -62,5 +62,5 @@ jobs:
 
             每次有新图片推送，此 Release 都会自动更新。下载 `逆天言论图片包.zip` 即可获得当前全部图片。
           files: |
-            逆天言论HUB/逆天言论图片包.zip
+            逆天言论/逆天言论图片包.zip
           update_release_body: true

@@ -31,7 +31,7 @@ const DOC_ALIASES = {
   地铁条例: '规则/ChenRay服务器地铁乘车管理条例.md',
 };
 
-const SKIP_DIRS = new Set(['.git', 'node_modules', '.github', '逆天言论HUB']);
+const SKIP_DIRS = new Set(['.git', 'node_modules', '.github', '逆天言论']);
 const RULE_DOCS = new Set([
   'ChenRay服务器玩家守则.md',
   'ChenRay服务器管理员条例.md',

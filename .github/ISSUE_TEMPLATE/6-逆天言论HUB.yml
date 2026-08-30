@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        向 [逆天言论HUB](https://github.com/ChenRay-team/ChenRay-Docs/tree/main/逆天言论HUB) 提交内容请使用本表单。
+        向 [逆天言论HUB](https://github.com/ChenRay-team/ChenRay-Docs/tree/main/逆天言论) 提交内容请使用本表单。
         该合集纯属娱乐，请勿上升到人身攻击。
   - type: dropdown
     id: request-type

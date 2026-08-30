@@ -54,11 +54,11 @@
 
 ## 逆天言论 HUB
 
-[逆天言论HUB](逆天言论HUB/) 是收集群友逆天发言 / 表情包的社区合集，按贡献者分类存放（如`妈妈合集/` 等）。向该目录推送图片后，GitHub Actions 会自动打包全部图片并更新 [Releases](https://github.com/ChenRay-team/ChenRay-Docs/releases/tag/latest) 中的合集包。
+[逆天言论HUB](逆天言论/) 是收集群友逆天发言 / 表情包的社区合集，按贡献者分类存放（如`妈妈合集/` 等）。向该目录推送图片后，GitHub Actions 会自动打包全部图片并更新 [Releases](https://github.com/ChenRay-team/ChenRay-Docs/releases/tag/latest) 中的合集包。
 
-- **提交新言论：** 将图片放入 `逆天言论HUB/` 下对应人物文件夹（没有可新建）
+- **提交新言论：** 将图片放入 `逆天言论/` 下对应人物文件夹（没有可新建）
 - **在线提交：** 贡献图片 / 申请贡献者权限 / 请求移除，请使用 [Issue 表单](https://github.com/ChenRay-team/ChenRay-Docs/issues/new/choose)
-- **图片来源规则：** 见 [逆天言论HUB/README.md](逆天言论HUB/README.md)
+- **图片来源规则：** 见 [逆天言论/README.md](逆天言论/README.md)
 - **声明：** 该合集纯属娱乐，请勿上升到人身攻击
 
 ## 仓库结构
@@ -70,7 +70,7 @@
 │   ├── ChenRay服务器管理员条例.md
 │   ├── ChenRay服务器地铁乘车管理条例.md
 │   └── 省流版/               三份省流速查版
-├── 逆天言论HUB/              群友逆天发言 / 表情包合集（自动打包发布）
+├── 逆天言论/                群友逆天发言 / 表情包合集（自动打包发布）
 ├── scripts/
 │   └── check-references.mjs 文档一致性检查器（5 类检查）
 ├── .github/
