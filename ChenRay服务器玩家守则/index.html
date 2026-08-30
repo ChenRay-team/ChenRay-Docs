@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -64,12 +66,10 @@
   
     
     
-      
     
     
     
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -122,33 +122,7 @@
     </div>
     
       
-        <form class="md-header__option" data-md-component="palette">
-  
     
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -863,7 +837,7 @@
   <a href="#83" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.3 论坛与工单
+        8.3 官网与工单
       
     </span>
   </a>
@@ -1954,7 +1928,7 @@
   <a href="#83" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.3 论坛与工单
+        8.3 官网与工单
       
     </span>
   </a>
@@ -2325,7 +2299,9 @@
 
 
 <h1 id="chenray">ChenRay服务器玩家守则<a class="headerlink" href="#chenray" title="Permanent link">&para;</a></h1>
-<p><strong>（v3.0.0 修订·完整版 ｜ 更新日期：2026.8.1）</strong></p>
+<blockquote>
+<p><strong>版本：</strong> v3.0.0 ｜ <strong>更新日期：</strong> 2026.8.1</p>
+</blockquote>
 <h2 id="_1">目录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="#前言">前言</a></li>
@@ -2346,7 +2322,7 @@
 <h2 id="_2">前言<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>本守则为《ChenRay服务器管理员条例》的配套文件，是规范玩家在服务器内一切行为的基础性规章。本守则适用于所有拥有或曾拥有本服白名单、账号及任何子服登录权限的玩家，无论其当前是否在线，均需遵守本守则的各项规定。</p>
 <p><strong>默示接受原则：</strong> 玩家一经进入服务器或官方社群，即视为已完整阅读、充分理解并无条件接受本守则全部条款。这意味着，任何违规行为均不能以"不知情""没看到"作为抗辩理由。建议各位玩家在首次进入服务器时，认真阅读本守则全文，了解自身权利与义务。</p>
-<p><strong>修订与公示：</strong> 守则解释权及修订权归 <strong>ChenRay 运营团队</strong> 所有，修订流程遵循"七日阳光流程"，即修订草案需公示七日、收集玩家意见后方可生效。修订内容将在论坛置顶、QQ群公告、游戏内公告栏三个渠道同时公示，确保每位玩家都能及时获知最新规则。</p>
+<p><strong>修订与公示：</strong> 守则解释权及修订权归 <strong>ChenRay 运营团队</strong> 所有，修订流程遵循"七日阳光流程"，即修订草案需公示七日、收集玩家意见后方可生效。修订内容将在 QQ 群公告、游戏内公告栏两个渠道同时公示，确保每位玩家都能及时获知最新规则。</p>
 <hr />
 <h2 id="_3">第一章 总则<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <h3 id="11">1.1 目的与原则<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
@@ -2360,7 +2336,7 @@
 <p>本守则的适用范围涵盖服务器运营的全部业务领域，包括：</p>
 <ul>
 <li><strong>服务器本体：</strong> 适用于主服、测试服等所有由运营团队直接或间接提供的服务器。无论是正式服还是测试服，玩家行为均受本守则约束。</li>
-<li><strong>官方社群平台：</strong> 适用于官方 QQ 群、论坛、工单系统等官方沟通与服务平台。玩家在这些平台上的言行同样受本守则规范，包括但不限于发言、交易、举报、申诉等行为。</li>
+<li><strong>官方社群平台：</strong> 适用于官方 QQ 群、工单系统等官方沟通与服务平台。玩家在这些平台上的言行同样受本守则规范，包括但不限于发言、交易、举报、申诉等行为。</li>
 <li><strong>跨平台延伸：</strong> 随着服务器业务的发展，若未来开设新的服务平台或登录渠道，本守则亦自动延伸适用，无需另行通知。</li>
 </ul>
 <h3 id="13">1.3 术语定义<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
@@ -2459,7 +2435,7 @@
 <h3 id="33">3.3 申诉流程<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
 <p>为保障玩家的合法权益，本守则设立了完善的申诉机制：</p>
 <ul>
-<li><strong>a)</strong> 玩家可在论坛 <strong>"申诉区"</strong> 按模板发帖，写明 ID、违规时间、管理员、申诉理由及新证据（新证据应在举证期内提交，确有客观原因的除外）。规范、完整的申诉信息有助于管理员高效处理</li>
+<li><strong>a)</strong> 玩家可通过<strong>官网或 QQ 群</strong>按模板提交申诉，写明 ID、违规时间、管理员、申诉理由及新证据（新证据应在举证期内提交，确有客观原因的除外）。规范、完整的申诉信息有助于管理员高效处理</li>
 <li><strong>b)</strong> 非当事两名管理员将在 <strong>72 小时内</strong> 联合审查并给出结论。由非当事管理员审查，能够确保审查的公正性与客观性</li>
 <li><strong>c)</strong> 申诉期间，账号维持原处罚状态；若申诉成功，立即解除处罚并公开道歉；若失败，维持或加重处罚</li>
 </ul>
@@ -2635,9 +2611,9 @@
 <li>尊重管理员管理，配合群内秩序维护</li>
 <li>玩家可通过群内 <strong>@值班管理员</strong> 求助或举报，举报时提供清晰证据（截图、录像等）</li>
 </ul>
-<h3 id="83">8.3 论坛与工单<a class="headerlink" href="#83" title="Permanent link">&para;</a></h3>
+<h3 id="83">8.3 官网与工单<a class="headerlink" href="#83" title="Permanent link">&para;</a></h3>
 <ul>
-<li>论坛用于发布公告、申诉、反馈等，发帖应遵守论坛版块规则，禁止发布违规、广告、恶意内容</li>
+<li><strong>官网</strong>用于发布公告、申诉、反馈等，请遵守相应版块规则，禁止发布违规、广告、恶意内容</li>
 <li>工单用于提交问题反馈、举报、申诉等，应如实、完整填写信息，恶意提交虚假工单将受处罚</li>
 </ul>
 <h3 id="84">8.4 禁止行为<a class="headerlink" href="#84" title="Permanent link">&para;</a></h3>
@@ -2655,7 +2631,7 @@
 <h2 id="_11">第九章 活动与赛事细则<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <h3 id="91">9.1 活动组织<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
 <p>服务器官方活动包括但不限于：建筑比赛、PVP 赛事、生存挑战、节日庆典、寻宝/解谜活动、团队竞技。</p>
-<p>活动举办前，运营团队将发布<strong>活动公告</strong>，说明活动时间与地点、活动内容与规则、报名方式与截止时间、奖励设置。公告将在论坛、QQ 群、游戏内公告栏同步发布。</p>
+<p>活动举办前，运营团队将发布<strong>活动公告</strong>，说明活动时间与地点、活动内容与规则、报名方式与截止时间、奖励设置。公告将在 QQ 群、游戏内公告栏同步发布。</p>
 <p>涉及场地改造、临时边界或特殊权限的活动，主办方须提前 <strong>48 小时</strong> 报备，经运营团队批准后实施。</p>
 <h3 id="92">9.2 活动参与<a class="headerlink" href="#92" title="Permanent link">&para;</a></h3>
 <p>玩家报名参与活动需满足：已获得白名单且账号状态正常、遵守活动规则与服务器规则、按公告要求完成报名。</p>
@@ -2789,7 +2765,7 @@
 <h3 id="131">13.1 修订与生效<a class="headerlink" href="#131" title="Permanent link">&para;</a></h3>
 <p>本守则自 <strong>2025 年 8 月 28 日 00:00</strong> 起首次生效，最新修订版本及更新日期见文件头部标注。运营团队保留随时修订守则的权利，但修订必须遵循"七日阳光流程"：</p>
 <ol>
-<li>修订草案将在论坛置顶、QQ群公告、游戏内公告栏三个渠道同时公示</li>
+<li>修订草案将在 QQ 群公告、游戏内公告栏两个渠道同步公示</li>
 <li>公示满 <strong>7 日</strong> 且无重大反对意见的，修订自动生效</li>
 </ol>
 <p>充分的公示期给予玩家了解与反馈的机会，确保修订内容合理、可行，并得到广大玩家的理解与支持。</p>
@@ -2801,7 +2777,7 @@
 <ul>
 <li><strong>官方 QQ 群：</strong> 108441415（入服绑定、公告、举报、申诉）</li>
 <li><strong>游戏内：</strong> 主城公告栏、游戏内 @值班管理员</li>
-<li><strong>论坛：</strong> 公告区、申诉区、举报通道</li>
+<li><strong>官网：</strong> <a href="https://www.chenray.top">www.chenray.top</a>（公告、申诉）</li>
 <li><strong>官网：</strong> <a href="https://www.chenray.top">www.chenray.top</a>（反作弊申诉等）</li>
 </ul>
 <p>各项事务的受理渠道与时限以对应章节为准。</p>

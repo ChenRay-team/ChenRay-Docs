@@ -1,0 +1,106 @@
+/*
+ * ChenRay 规则文档站 · Forty 风格
+ * 模仿 wwwroot（HTML5 UP Forty 模板定制版）：
+ *   深蓝黑背景 #242943 + 青色强调 #53e3fb / #9bf1ff + 紫色点缀 #8d82c4
+ */
+
+:root {
+  /* 主色（导航栏） */
+  --md-primary-fg-color: #2a2f4a;
+  --md-primary-fg-color--dark: #242943;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+
+  /* 强调色（链接 / 悬浮） */
+  --md-accent-fg-color: #53e3fb;
+  --md-accent-fg-color--transparent: rgba(83, 227, 251, 0.25);
+
+  /* 正文 */
+  --md-default-fg-color: #ffffff;
+  --md-default-fg-color--light: rgba(255, 255, 255, 0.7);
+  --md-default-fg-color--lighter: rgba(255, 255, 255, 0.35);
+  --md-default-fg-color--lightest: rgba(255, 255, 255, 0.12);
+  --md-default-bg-color: #242943;
+  --md-typeset-a-color: #53e3fb;
+  --md-typeset-mark-color: rgba(83, 227, 251, 0.35);
+
+  /* 代码 */
+  --md-code-bg-color: rgba(255, 255, 255, 0.06);
+  --md-code-fg-color: #9bf1ff;
+
+  /* 页脚 */
+  --md-footer-bg-color: #1b1f33;
+  --md-footer-fg-color: rgba(255, 255, 255, 0.7);
+  --md-footer-fg-color--light: rgba(255, 255, 255, 0.45);
+  --md-footer-fg-color--lighter: rgba(255, 255, 255, 0.3);
+}
+
+/* 顶部导航：Forty 风格深色渐变 + 阴影 */
+.md-header {
+  background: linear-gradient(90deg, #242943 0%, #2a2f4a 100%);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
+}
+
+/* 侧边导航悬浮青色 */
+.md-nav__item .md-nav__link:hover {
+  color: #9bf1ff;
+}
+
+/* 正文标题青色点缀 */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: #9bf1ff;
+}
+
+/* 链接 hover 提亮 + 下划线 */
+.md-typeset a:hover {
+  color: #9bf1ff;
+}
+
+/* Forty 风格按钮：描边青色 / 主按钮青紫渐变 */
+.md-typeset .md-button {
+  border: 1px solid #53e3fb;
+  color: #53e3fb;
+  border-radius: 0.3rem;
+}
+.md-typeset .md-button:hover {
+  background: linear-gradient(90deg, rgba(83, 227, 251, 0.22), rgba(141, 130, 196, 0.3));
+  border-color: #9bf1ff;
+  color: #ffffff;
+}
+.md-typeset .md-button--primary {
+  background: linear-gradient(90deg, #53e3fb, #8d82c4);
+  border-color: transparent;
+  color: #242943;
+  font-weight: 700;
+}
+.md-typeset .md-button--primary:hover {
+  background: linear-gradient(90deg, #9bf1ff, #8d82c4);
+  border-color: transparent;
+  color: #242943;
+}
+
+/* 引用块：左侧青色条 */
+.md-typeset blockquote {
+  border-left: 0.25rem solid #53e3fb;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* 表格圆角 + 浅色边线 */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.md-typeset table:not([class]) th {
+  background: #2a2f4a;
+  color: #9bf1ff;
+}
+.md-typeset table:not([class]) tr:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* 代码块圆角 */
+.md-typeset pre > code {
+  border-radius: 8px;
+}

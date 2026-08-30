@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -64,12 +66,10 @@
   
     
     
-      
     
     
     
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -122,33 +122,7 @@
     </div>
     
       
-        <form class="md-header__option" data-md-component="palette">
-  
     
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -2981,7 +2955,7 @@
 <p>此外，管理员还应积极推广服务器的规则和文化，提高玩家对良好游戏环境的认知和认同感。通过持续的正向引导，潜移默化地培养玩家的规则意识与社区归属感。</p>
 <h4 id="44">4.4 确保信息及时性与准确性<a class="headerlink" href="#44" title="Permanent link">&para;</a></h4>
 <p>管理员需要确保信息的<strong>及时性和准确性</strong>。这包括更新服务器的公告、规则说明以及其他相关信息，确保玩家能够及时获取最新的游戏信息。信息是玩家了解服务器动态的重要渠道，及时准确的信息发布至关重要。</p>
-<p>管理员还应及时处理玩家在社区平台（如论坛、社交媒体群组等）上提出的问题和建议，反馈给服务器运营团队，并将解决方案及时告知玩家。畅通的反馈渠道，能够增强玩家参与感与信任感。</p>
+<p>管理员还应及时处理玩家在社区平台（如 QQ 群、社交媒体群组等）上提出的问题和建议，反馈给服务器运营团队，并将解决方案及时告知玩家。畅通的反馈渠道，能够增强玩家参与感与信任感。</p>
 <p>在发布信息时，管理员应确保信息的真实性和准确性，避免误导玩家。若发现错误信息，应及时进行更正，以维护服务器信息的权威性和可信度。信息的准确与否，直接关系玩家对服务器的信任。</p>
 <h3 id="_8">第五条：处罚逻辑<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <p>处罚是管理手段的重要组成部分，但绝非目的。合理的处罚逻辑，既要有效遏制违规行为，也要保障玩家的合法权益，体现公正与人性化。</p>
@@ -3082,7 +3056,7 @@
 <li>影响范围</li>
 <li>善后措施</li>
 </ul>
-<p>补录表由<strong>两名非当事管理员</strong>审核后归档，并公开张贴于论坛置顶七日；未按时补录或审核未通过的，即视为违规。补录制度既保障了紧急处置的效率，也通过事后追认的方式，确保紧急介入行为同样处于监督之下。</p>
+<p>补录表由<strong>两名非当事管理员</strong>审核后归档，并公开张贴于 QQ 群公告置顶七日；未按时补录或审核未通过的，即视为违规。补录制度既保障了紧急处置的效率，也通过事后追认的方式，确保紧急介入行为同样处于监督之下。</p>
 <h4 id="66">6.6 违规升级与公示<a class="headerlink" href="#66" title="Permanent link">&para;</a></h4>
 <p>针对管理员在特殊参与中的违规行为，本条例实行升级处罚与公示机制：</p>
 <table>
@@ -3132,7 +3106,7 @@
 <p>服务器环境与规则不断发展变化，条例也需要适时更新。但条例的修订必须遵循严格的程序，确保其合理性与广泛接受度。</p>
 <p>运营团队保留随时修订条例的权利，但修订必须遵循 <strong>"七日阳光流程"</strong>：</p>
 <ol>
-<li>先在论坛置顶帖、QQ 群公告、频道同时发布修订草案，明确列出新增、删减或修改的条款，并开放玩家与管理员的意见收集帖</li>
+<li>先在 QQ 群公告、游戏内公告栏同时发布修订草案，明确列出新增、删减或修改的条款，并开放玩家与管理员的意见收集帖</li>
 <li>七天内若无重大反对意见，草案自动转为正式版，旧版即时废止</li>
 <li>若存在重大分歧，则延长讨论期至<strong>十四天</strong>，必要时召开线上听证会后再次表决</li>
 </ol>
@@ -4798,7 +4772,7 @@
 <p><strong>作弊录像回放：</strong> 当玩家被反作弊系统标记为可疑时，自动录制该玩家的游戏录像。管理员可通过回放录像核实作弊行为，避免误判。录像记录保存一定天数，供人工复核与申诉审查使用。</p>
 <p><strong>聊天举报屏蔽：</strong> 屏蔽新版聊天举报弹窗，防止玩家被恶意举报；过滤非法签名消息，保障聊天秩序，避免因恶意举报造成的误封风险。</p>
 <h4 id="146">14.6 反作弊申诉<a class="headerlink" href="#146" title="Permanent link">&para;</a></h4>
-<p>被反作弊系统或管理员封禁的玩家，若认为封禁存在误判，可提出申诉。玩家可通过 <strong><a href="https://www.chenray.top">www.chenray.top</a></strong> 官网申诉、论坛"申诉区"发帖、QQ 群联系值班管理员等方式提交申诉。</p>
+<p>被反作弊系统或管理员封禁的玩家，若认为封禁存在误判，可提出申诉。玩家可通过 <strong><a href="https://www.chenray.top">www.chenray.top</a></strong> 官网申诉、QQ 群联系值班管理员或提交 Issue 等方式提交申诉。</p>
 <p>非当事的 <strong>两名管理员</strong> 将在 <strong>72 小时内</strong> 对申诉进行联合审查。审查结果分为：申诉成功（立即解除封禁并公开道歉）、申诉失败（维持原决定，必要时加重）、部分成立（调整封禁时长或附带措施）。</p>
 <p>以下行为属恶意申诉，将从严处理：提供虚假证据、伪造信息；反复提交无理由申诉；申诉过程中辱骂、威胁管理员。</p>
 <hr />
