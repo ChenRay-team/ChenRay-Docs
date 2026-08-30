@@ -19,8 +19,8 @@ jobs:
           pandoc 规则/省流版/管理员条例省流版.md -s --self-contained --metadata title="管理员条例省流版" -o dist/管理员条例省流版.html
           pandoc 规则/省流版/地铁乘车管理条例省流版.md -s --self-contained --metadata title="地铁乘车管理条例省流版" -o dist/地铁乘车管理条例省流版.html
           cp LICENSE dist/LICENSE.txt
-          cd dist && zip -r ../ChenRay-Rule-docs.zip . && cd ..
+          cd dist && zip -r ../ChenRay-Docs.zip . && cd ..
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v2
         with:
-          files: ChenRay-Rule-docs.zip
+          files: ChenRay-Docs.zip

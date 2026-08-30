@@ -1,9 +1,9 @@
 # ChenRay 服务器
 
-![Lint](https://img.shields.io/github/actions/workflow/status/chenray-team/ChenRay-Rule/lint.yml?branch=main&label=lint&logo=github)
-![Docs](https://img.shields.io/github/actions/workflow/status/chenray-team/ChenRay-Rule/pages.yml?branch=main&label=docs%20site&logo=github)
-![License](https://img.shields.io/github/license/chenray-team/ChenRay-Rule?color=blue)
-![GitHub last commit](https://img.shields.io/github/last-commit/chenray-team/ChenRay-Rule?color=blueviolet)
+![Lint](https://img.shields.io/github/actions/workflow/status/chenray-team/ChenRay-Docs/lint.yml?branch=main&label=lint&logo=github)
+![Docs](https://img.shields.io/github/actions/workflow/status/chenray-team/ChenRay-Docs/pages.yml?branch=main&label=docs%20site&logo=github)
+![License](https://img.shields.io/github/license/chenray-team/ChenRay-Docs?color=blue)
+![GitHub last commit](https://img.shields.io/github/last-commit/chenray-team/ChenRay-Docs?color=blueviolet)
 
 > **生存 · 红石 · 建筑 · 地铁 · 赛事** —— 一个由玩家共建的 Minecraft 服务器。
 
@@ -83,7 +83,7 @@
 - **更新记录：** 见 [CHANGELOG.md](CHANGELOG.md)
 - **版本与许可：** 文档版本号见各文件头部；仓库许可见 [LICENSE](LICENSE)
 - **本地校验：** `npm run verify`（markdownlint + 5 类一致性检查）、`npm run docs:serve`（本地预览文档站）
-- **问题反馈：** 游戏故障、违规举报、处罚申诉、规则问题与建议请提交 [Issue](https://github.com/ChenRay-team/ChenRay-Rule/issues)（已配置标准模板）
+- **问题反馈：** 游戏故障、违规举报、处罚申诉、规则问题与建议请提交 [Issue](https://github.com/ChenRay-team/ChenRay-Docs/issues)（已配置标准模板）
 
 ---
 

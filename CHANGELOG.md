@@ -143,8 +143,8 @@
 
 ---
 
-[unreleased]: https://github.com/ChenRay-team/ChenRay-Rule
-[v3.1.0]: https://github.com/ChenRay-team/ChenRay-Rule/releases/tag/v3.1.0
-[v3.0.0]: https://github.com/ChenRay-team/ChenRay-Rule/releases/tag/v3.0.0
-[v2.0.0]: https://github.com/ChenRay-team/ChenRay-Rule/releases/tag/v2.0.0
-[v1.0.0]: https://github.com/ChenRay-team/ChenRay-Rule/releases/tag/v1.0.0
+[unreleased]: https://github.com/ChenRay-team/ChenRay-Docs
+[v3.1.0]: https://github.com/ChenRay-team/ChenRay-Docs/releases/tag/v3.1.0
+[v3.0.0]: https://github.com/ChenRay-team/ChenRay-Docs/releases/tag/v3.0.0
+[v2.0.0]: https://github.com/ChenRay-team/ChenRay-Docs/releases/tag/v2.0.0
+[v1.0.0]: https://github.com/ChenRay-team/ChenRay-Docs/releases/tag/v1.0.0

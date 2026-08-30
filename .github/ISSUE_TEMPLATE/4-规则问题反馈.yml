@@ -8,9 +8,9 @@ body:
     attributes:
       value: |
         请在反馈前确认已查阅最新版规则文档：
-        - [玩家守则](https://github.com/ChenRay-team/ChenRay-Rule/blob/main/规则/ChenRay服务器玩家守则.md)
-        - [管理员条例](https://github.com/ChenRay-team/ChenRay-Rule/blob/main/规则/ChenRay服务器管理员条例.md)
-        - [地铁乘车管理条例](https://github.com/ChenRay-team/ChenRay-Rule/blob/main/规则/ChenRay服务器地铁乘车管理条例.md)
+        - [玩家守则](https://github.com/ChenRay-team/ChenRay-Docs/blob/main/规则/ChenRay服务器玩家守则.md)
+        - [管理员条例](https://github.com/ChenRay-team/ChenRay-Docs/blob/main/规则/ChenRay服务器管理员条例.md)
+        - [地铁乘车管理条例](https://github.com/ChenRay-team/ChenRay-Docs/blob/main/规则/ChenRay服务器地铁乘车管理条例.md)
   - type: dropdown
     id: document
     attributes:

@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        在反馈前，请确认您已阅读最新版 [玩家守则](https://github.com/ChenRay-team/ChenRay-Rule/blob/main/规则/ChenRay服务器玩家守则.md)。
+        在反馈前，请确认您已阅读最新版 [玩家守则](https://github.com/ChenRay-team/ChenRay-Docs/blob/main/规则/ChenRay服务器玩家守则.md)。
         请详细描述您遇到的问题，并按照下面的模板填充信息后提交。
 
         若问题已解决，请关闭该 Issue 以告知管理团队。

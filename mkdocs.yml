@@ -1,8 +1,8 @@
 site_name: ChenRay 服务器规则
 site_description: ChenRay 服务器官方规则文档
-site_url: https://chenray-team.github.io/ChenRay-Rule/
-repo_url: https://github.com/ChenRay-team/ChenRay-Rule
-repo_name: ChenRay-Rule
+site_url: https://chenray-team.github.io/ChenRay-Docs/
+repo_url: https://github.com/ChenRay-team/ChenRay-Docs
+repo_name: ChenRay-Docs
 docs_dir: 规则
 edit_uri: edit/main/规则/
 
