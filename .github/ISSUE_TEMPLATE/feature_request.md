@@ -1,6 +1,6 @@
 ---
 name: 功能建议
-about: 为规则或仓库提出改进建议
+about: 为服务器玩法、插件或规则提出建议
 title: "[建议] "
 labels: enhancement
 assignees: ''
@@ -9,7 +9,7 @@ assignees: ''
 
 ## 建议内容
 
-请描述你的建议：
+请描述你的建议（玩法 / 插件 / 规则 / 活动等）：
 
 ## 背景与理由
 

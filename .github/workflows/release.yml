@@ -12,12 +12,12 @@ jobs:
       - name: Build self-contained HTML
         run: |
           mkdir -p dist
-          pandoc docs/ChenRay服务器玩家守则.md -s --self-contained --metadata title="ChenRay 玩家守则" -o dist/玩家守则.html
-          pandoc docs/ChenRay服务器管理员条例.md -s --self-contained --metadata title="ChenRay 管理员条例" -o dist/管理员条例.html
-          pandoc docs/ChenRay服务器地铁乘车管理条例.md -s --self-contained --metadata title="ChenRay 地铁乘车管理条例" -o dist/地铁乘车管理条例.html
-          pandoc docs/省流版/玩家守则省流版.md -s --self-contained --metadata title="玩家守则省流版" -o dist/玩家守则省流版.html
-          pandoc docs/省流版/管理员条例省流版.md -s --self-contained --metadata title="管理员条例省流版" -o dist/管理员条例省流版.html
-          pandoc docs/省流版/地铁乘车管理条例省流版.md -s --self-contained --metadata title="地铁乘车管理条例省流版" -o dist/地铁乘车管理条例省流版.html
+          pandoc 规则/ChenRay服务器玩家守则.md -s --self-contained --metadata title="ChenRay 玩家守则" -o dist/玩家守则.html
+          pandoc 规则/ChenRay服务器管理员条例.md -s --self-contained --metadata title="ChenRay 管理员条例" -o dist/管理员条例.html
+          pandoc 规则/ChenRay服务器地铁乘车管理条例.md -s --self-contained --metadata title="ChenRay 地铁乘车管理条例" -o dist/地铁乘车管理条例.html
+          pandoc 规则/省流版/玩家守则省流版.md -s --self-contained --metadata title="玩家守则省流版" -o dist/玩家守则省流版.html
+          pandoc 规则/省流版/管理员条例省流版.md -s --self-contained --metadata title="管理员条例省流版" -o dist/管理员条例省流版.html
+          pandoc 规则/省流版/地铁乘车管理条例省流版.md -s --self-contained --metadata title="地铁乘车管理条例省流版" -o dist/地铁乘车管理条例省流版.html
           cp LICENSE dist/LICENSE.txt
           cd dist && zip -r ../ChenRay-Rule-docs.zip . && cd ..
       - name: Upload Release Asset
