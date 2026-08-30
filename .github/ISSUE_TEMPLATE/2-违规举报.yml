@@ -1,0 +1,76 @@
+name: 违规举报 | Violation Report
+description: 举报玩家在游戏内或官方社群中的违规行为
+labels:
+  - violation
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请如实举报，恶意举报将按规则处理。
+        证据请尽量包含时间与坐标，以便管理员核实。
+  - type: input
+    id: reporter-id
+    attributes:
+      label: 举报人游戏 ID
+    validations:
+      required: true
+  - type: input
+    id: target-id
+    attributes:
+      label: 被举报人游戏 ID
+    validations:
+      required: true
+  - type: input
+    id: target-qq
+    attributes:
+      label: 被举报人 QQ（如有）
+  - type: dropdown
+    id: violation-type
+    attributes:
+      label: 违规类型
+      multiple: true
+      options:
+        - 作弊 / 外挂
+        - 恶意破坏 / 偷窃
+        - 辱骂 / 骚扰 / 刷屏
+        - RMT / 诈骗 / 虚假交易
+        - 账号共享 / 买卖
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: 违规经过
+      description: 时间、地点、具体行为。
+      placeholder: |
+        e.g.
+        - 时间：2026-08-30 20:00
+        - 地点：主城商店街
+        - 行为：恶意拆除了我的店铺告示牌
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据材料
+      description: 截图 / 录像 / 聊天记录，请尽量包含时间与坐标。
+      placeholder: 拖拽图片到此处。
+    validations:
+      required: true
+  - type: checkboxes
+    id: evidence-type
+    attributes:
+      label: 证据类型
+      options:
+        - label: 截图
+        - label: 录像
+        - label: 聊天记录
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 确认
+      options:
+        - label: 我承诺以上信息与证据真实有效，愿意承担虚假举报的后果
+          required: true

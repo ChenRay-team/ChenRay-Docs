@@ -1,0 +1,37 @@
+name: 功能建议 | Feature Request
+description: 为服务器玩法、插件或规则提出建议
+labels:
+  - enhancement
+type: Feature
+body:
+  - type: dropdown
+    id: suggestion-type
+    attributes:
+      label: 建议类型
+      options:
+        - 玩法
+        - 插件
+        - 规则
+        - 活动
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: 建议内容
+      placeholder: 请描述你的建议。
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 背景与理由
+      description: 现状问题、使用场景等。
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: 实现思路（可选）
+      description: 你期望的实现方式或参考。

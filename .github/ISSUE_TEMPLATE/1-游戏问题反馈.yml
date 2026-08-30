@@ -1,0 +1,93 @@
+name: 游戏问题反馈 | Game Issue
+description: 报告游戏内故障（进不去、掉线、卡顿、报错等）
+labels:
+  - bug
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        在反馈前，请确认您已阅读最新版 [玩家守则](https://github.com/ChenRay-team/ChenRay-Rule/blob/main/规则/ChenRay服务器玩家守则.md)。
+        请详细描述您遇到的问题，并按照下面的模板填充信息后提交。
+
+        若问题已解决，请关闭该 Issue 以告知管理团队。
+  - type: input
+    id: game-id
+    attributes:
+      label: 游戏 ID
+      description: 您进入服务器使用的游戏 ID。
+      placeholder: e.g. aqing
+    validations:
+      required: true
+  - type: dropdown
+    id: launcher
+    attributes:
+      label: 启动器
+      options:
+        - HMCL
+        - PCL
+        - 官方启动器
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: client-version
+    attributes:
+      label: 客户端版本
+      description: 您使用的 Minecraft 客户端版本。
+      placeholder: e.g. 1.20.1
+    validations:
+      required: true
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: 问题类型
+      multiple: true
+      options:
+        - 无法进服 / 进服报错
+        - 频繁掉线 / 卡顿 / 延迟
+        - 插件或功能异常
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 预期的行为 Expected behavior
+      description: 您期望看到的情况是什么。
+      placeholder: e.g. 右键停靠点红石铁轨可以正常上车
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: 观测到的实际行为 Observed/Actual behavior
+      description: 您实际看到的。
+      placeholder: e.g. 右键后没有任何反应
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤 Steps to reproduce
+      description: 这里应包含图片、视频或详细步骤来展现您的问题。
+      placeholder: |
+        e.g.
+        1. 走到主城地铁站
+        2. 右键红石铁轨
+        3. 没有任何反应
+    validations:
+      required: true
+  - type: textarea
+    id: error-info
+    attributes:
+      label: 报错信息 / 截图
+      description: 如有报错信息或截图，请粘贴在这里。
+      placeholder: 拖拽图片到此处，或粘贴报错文本。
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 确认
+      options:
+        - label: 我已确认该问题确实存在，并尽可能提供了复现信息
+          required: true

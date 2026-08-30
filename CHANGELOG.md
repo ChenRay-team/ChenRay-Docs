@@ -31,7 +31,7 @@
 - **检查器升级：** `scripts/check-references.mjs` 升级为文档一致性检查器（编号引用 / 章节引用 / 内部链接 / 版本一致 / 头部规范共 5 类检查，支持彩色输出与 `--json`），并清理根目录重复文档副本
 - **协作基建：** 新增 Issue 模板（规则问题反馈 / 功能建议）、PR 模板与 `dependabot.yml`（npm + GitHub Actions 依赖自动更新）
 - **仓库定位升级：** 仓库由"规则文档仓库"扩展为**服务器专用综合仓库**；新增 `服务器信息.md`（地址 / 版本 / 官方渠道）；规则文档统一存放于 `规则/` 目录
-- **Issue 模板大翻新：** 新增游戏问题反馈、违规举报、处罚申诉、规则问题、功能建议五类模板及 `config.yml`（联系渠道引导）
+- **Issue 表单重写：** 参考 [LeavesMC/Leaves](https://github.com/LeavesMC/Leaves) 改用 **GitHub Issue Forms（YAML 表单）**——`1-游戏问题反馈`、`2-违规举报`、`3-处罚申诉`、`4-规则问题反馈`、`5-功能建议`（markdown 引导 + 下拉选择 + 必填校验 + 复现步骤），配合 `config.yml` 联系渠道，并删除原 Markdown 版模板
 
 ### 新增
 

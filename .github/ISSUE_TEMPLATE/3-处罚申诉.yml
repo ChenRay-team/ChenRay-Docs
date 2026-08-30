@@ -1,0 +1,57 @@
+name: 处罚申诉 | Appeal
+description: 对封禁 / 禁言等处罚决定提出申诉
+labels:
+  - appeal
+body:
+  - type: markdown
+    attributes:
+      value: |
+        申诉请如实提供证据，恶意申诉将按规则从重处理。
+        两名非当事管理员将在 72 小时内联合审查。
+  - type: input
+    id: game-id
+    attributes:
+      label: 游戏 ID
+    validations:
+      required: true
+  - type: dropdown
+    id: penalty-type
+    attributes:
+      label: 处罚类型
+      options:
+        - 封禁
+        - 禁言
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: penalty-time
+    attributes:
+      label: 处罚时间
+      placeholder: e.g. 2026-08-30
+    validations:
+      required: true
+  - type: input
+    id: admin
+    attributes:
+      label: 执行管理员（如有）
+  - type: textarea
+    id: penalty-details
+    attributes:
+      label: 处罚经过
+      description: 管理员告知的违规描述、处罚依据、当时的沟通情况。
+    validations:
+      required: true
+  - type: textarea
+    id: appeal-reason
+    attributes:
+      label: 申诉理由
+      description: 对违规认定的异议、对证据的异议、其他理由。
+    validations:
+      required: true
+  - type: textarea
+    id: new-evidence
+    attributes:
+      label: 新证据（如有）
+      description: 证据类型与内容。
+      placeholder: 拖拽图片到此处。

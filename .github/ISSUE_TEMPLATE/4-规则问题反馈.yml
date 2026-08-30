@@ -1,0 +1,53 @@
+name: 规则问题反馈 | Rule Issue
+description: 报告规则文档中的错误、矛盾或漏洞
+labels:
+  - bug
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请在反馈前确认已查阅最新版规则文档：
+        - [玩家守则](https://github.com/ChenRay-team/ChenRay-Rule/blob/main/规则/ChenRay服务器玩家守则.md)
+        - [管理员条例](https://github.com/ChenRay-team/ChenRay-Rule/blob/main/规则/ChenRay服务器管理员条例.md)
+        - [地铁乘车管理条例](https://github.com/ChenRay-team/ChenRay-Rule/blob/main/规则/ChenRay服务器地铁乘车管理条例.md)
+  - type: dropdown
+    id: document
+    attributes:
+      label: 涉及文档
+      options:
+        - 玩家守则
+        - 管理员条例
+        - 地铁乘车管理条例
+        - 省流版
+        - 其他
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: 章节 / 条款编号
+      placeholder: e.g. 玩家守则 7.2
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: 问题类型
+      options:
+        - 错误
+        - 矛盾
+        - 漏洞
+        - 措辞不清
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 建议修改
+      description: 你希望如何修改。
