@@ -10,20 +10,9 @@ theme:
   name: material
   language: zh
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: 切换到深色模式
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: 切换到浅色模式
+    scheme: slate
+    primary: indigo
+    accent: indigo
   features:
     - navigation.instant
     - navigation.tracking
@@ -35,6 +24,10 @@ theme:
     - content.code.copy
   icon:
     repo: fontawesome/brands/github
+
+# Forty 风格自定义样式（深蓝黑底 + 青色强调）
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search
