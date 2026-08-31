@@ -2163,8 +2163,8 @@
 <p>举个例子，<code>/fpp spawn</code> 和 <code>/bot spawn</code> 是同一个指令，只是写法不同。本教程的示例统一使用 <code>/fpp</code> 前缀，你把示例中的 <code>/fpp</code> 换成 <code>/bot</code> 也完全没问题。</p>
 <h3 id="32">3.2 帮助菜单<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
 <p>如果你忘记了某个指令的具体用法，随时可以输入：</p>
-<div class="highlight"><pre><span></span><code>/fpp help
-</code></pre></div>
+<p><code>text
+/fpp help</code>text</p>
 <p>这条指令会打开游戏内的帮助菜单，列出当前你权限范围内所有能使用的指令以及它们的简要说明。帮助菜单是分页显示的，可以翻页浏览。这是快速回忆指令用法的最好方式。菜单里只会显示你有权限使用的指令，权限不够的指令是不会出现的。</p>
 <hr />
 <h2 id="_4">四、快速上手速查表<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
@@ -2252,14 +2252,14 @@
 <h2 id="_5">五、生成假人<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <h3 id="51">5.1 基础生成<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
 <p>最简单的方式，直接输入：</p>
-<div class="highlight"><pre><span></span><code>/fpp spawn
-</code></pre></div>
+<p><code>text
+/fpp spawn</code>text</p>
 <p>指令会在你脚下生成一个假人，并自动给它起一个名字。生成之后，假人会站在你身边，等待你的下一步指令。</p>
 <p>需要特别注意的是：<strong>生成假人必须由玩家在游戏内亲自执行</strong>，控制台或后台是无法生成假人的。而且假人总是生成在你当前所在的位置，也就是以你自己为参照点，不能指定生成到某个遥远的世界坐标。</p>
 <h3 id="52">5.2 自定义名字<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
 <p>如果你希望假人有一个更有辨识度的名字，方便在多个人一起使用时区分，可以使用 <code>--name</code> 参数：</p>
-<div class="highlight"><pre><span></span><code>/fpp spawn --name Miner
-</code></pre></div>
+<p><code>text
+/fpp spawn --name Miner</code>text</p>
 <p>关于名字，有一些限制需要提前了解：</p>
 <ul>
 <li>长度限制为 <strong>1 到 16 个字符</strong>。</li>
@@ -2290,21 +2290,21 @@
 <hr />
 <h2 id="_6">六、管理假人<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <h3 id="61">6.1 查看假人列表<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/fpp list
-</code></pre></div>
+<p><code>text
+/fpp list</code>text</p>
 <p>这条指令会列出当前服务器上所有活跃的假人，方便你确认自己手上有哪些假人、它们的名字是什么。尤其是假人一多的时候，先用 <code>/fpp list</code> 看清再操作，就不容易搞混。</p>
 <h3 id="62">6.2 查看假人信息<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/fpp info bot
-</code></pre></div>
+<p><code>text
+/fpp info bot</code>text</p>
 <p>信息中会显示假人当前所在的位置、已经存在的时间等内容，帮助你判断它是否还在正常工作、是否还在原来的地方。如果你不小心把假人弄丢了，先用这条指令确认它是否还在，再用传送指令把它找回来。</p>
 <h3 id="63">6.3 改名<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/fpp rename bot 新名字
-</code></pre></div>
+<p><code>text
+/fpp rename bot 新名字</code>text</p>
 <p>修改假人的显示名字，头顶名牌、列表里的名字都会同步更新。改名的规则和生成时的命名规则一样（1~16 个字符，字母、数字、下划线），而且头顶的"bot by 你"标识会一直保留，不用担心被认成真人。如果你觉得假人自动起的名字不好记，给它起一个顺口的名字会方便很多。</p>
 <h3 id="64">6.4 删除假人<a class="headerlink" href="#64" title="Permanent link">&para;</a></h3>
 <p>当你不再需要某个假人时，可以把它删除：</p>
-<div class="highlight"><pre><span></span><code>/fpp despawn --own
-</code></pre></div>
+<p><code>text
+/fpp despawn --own</code>text</p>
 <p>这里的 <code>--own</code> 参数表示<strong>只删除你自己生成的那些假人</strong>，不会影响到其他玩家的假人，使用起来非常安全。有几点需要特别说明：</p>
 <ul>
 <li>如果执行这条指令时提示"你没有权限"，说明管理员还没有开放玩家删除假人的功能。你可以联系管理员，请他们为你开通权限。</li>
@@ -2315,24 +2315,24 @@
 <h2 id="_7">七、操控假人<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <h3 id="71">7.1 传送假人<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
 <p>如果你走远了，想让假人跟着你转移到新的地点，可以使用传送指令：</p>
-<div class="highlight"><pre><span></span><code>/fpp tph bot
-</code></pre></div>
+<p><code>text
+/fpp tph bot</code>text</p>
 <p>这条指令会把指定的假人直接传送到你的身边，省去你跑回去找它的麻烦。无论是换地方挖矿，还是换个区域干活，这条指令都能让假人迅速跟上你。</p>
 <p>如果你想主动传送到假人身边，可以用：</p>
-<div class="highlight"><pre><span></span><code>/fpp tp bot
-</code></pre></div>
+<p><code>text
+/fpp tp bot</code>text</p>
 <h3 id="72">7.2 让假人移动<a class="headerlink" href="#72" title="Permanent link">&para;</a></h3>
 <p>假人不光能站在原地干活，还能按你的要求自己走过去。假人会<strong>自动寻路</strong>，绕开障碍走到目标地点：</p>
-<div class="highlight"><pre><span></span><code>/fpp move bot --to 你的名字    让假人走到你身边，并且会持续跟着你移动
+<p><code>text
+/fpp move bot --to 你的名字    让假人走到你身边，并且会持续跟着你移动
 /fpp move bot --to bot2       让假人走到另一个假人身边
 /fpp move bot --coords 100 64 -200    让假人走到指定坐标
-/fpp move bot --stop          停止移动
-</code></pre></div>
+/fpp move bot --stop          停止移动</code>text</p>
 <p>其中 <code>--to</code> 后面既可以跟真人玩家，也可以跟另一个假人。跟真人时假人会一路跟着他，非常适合当"小跟班"一起行动；跟坐标时假人会走到那个精确位置，适合搬运、站位等场景。</p>
 <h3 id="73">7.3 自动挖掘或攻击（左键）<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
 <p>这是假人最常用的功能。假人可以代替你，对着某个目标执行左键操作，也就是挖掘方块或者攻击生物：</p>
-<div class="highlight"><pre><span></span><code>/fpp left-click bot --once
-</code></pre></div>
+<p><code>text
+/fpp left-click bot --once</code>text</p>
 <p>使用这条指令时有几个关键要点：</p>
 <ul>
 <li>指令中的 <code>--once</code> 表示只执行一次，假人做完就停，不会一直重复。</li>
@@ -2342,13 +2342,13 @@
 <p>举个例子：你想让假人帮你挖掉一块铁矿石。你只需要站好，让视线对准那块铁矿石，然后输入 <code>/fpp left-click bot --once</code>，假人就会走过去，把那块铁矿石挖掉。</p>
 <p>这里还有一个细节：假人执行左键时，会对准你瞄准的精确位置动手，而不是草草地对着方块表面。如果目标在够不到的位置，假人会先自己寻找一个合适的落脚点，走到能碰到目标的地方再开始。所以哪怕目标在墙壁后面、头顶上方，假人也会尽量想办法完成。</p>
 <p>如果你希望假人能够持续重复挖掘，比如让它连续挖一整片矿脉，可以使用重复模式：</p>
-<div class="highlight"><pre><span></span><code>/fpp left-click bot --repeat
-</code></pre></div>
+<p><code>text
+/fpp left-click bot --repeat</code>text</p>
 <p>重复模式下，假人会按照设定的间隔不断执行左键操作，适合自动挖矿、自动刷怪等场景。挖矿的时候也要注意，假人挖下来的方块会掉在原地，记得及时捡起来，别让物品消失。</p>
 <h3 id="74">7.4 自动交互（右键）<a class="headerlink" href="#74" title="Permanent link">&para;</a></h3>
 <p>右键功能让假人可以代替你执行交互操作：</p>
-<div class="highlight"><pre><span></span><code>/fpp right-click bot --once
-</code></pre></div>
+<p><code>text
+/fpp right-click bot --once</code>text</p>
 <p>和左键类似，假人会对着你瞄准的方块或实体执行一次右键。常见的用途包括：</p>
 <ul>
 <li>打开箱子、木桶、潜影盒等容器。</li>
@@ -2359,40 +2359,40 @@
 <p>有一个小技巧值得记住：如果你想让假人右键某个开关，比如按钮或拉杆，<strong>一定要让假人的视线真正对准开关本身</strong>，而不是它附着的那个方块。多试几次角度，找准了假人就能顺利触发。</p>
 <p>右键功能的想象力空间很大：让假人帮你把耕地重新锄一遍、让假人对着农田持续使用骨粉催熟、让假人在箱子旁边帮你把物品放进去……只要是需要反复右键的操作，都可以尝试交给假人。持续右键使用 <code>--repeat</code> 模式即可。遇到拿不准的用法，先小范围测试几次，熟练之后再大规模使用。</p>
 <h3 id="75">7.5 攻击与战斗<a class="headerlink" href="#75" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/fpp attack bot --once
-</code></pre></div>
+<p><code>text
+/fpp attack bot --once</code>text</p>
 <p>让假人挥砍一次。更丰富的自动战斗设置（比如锁定目标、追击范围、攻击优先级等）可以在假人的设置界面里配置。如果你需要假人长时间清理怪物，可以配合刷怪塔使用，让假人站在刷怪塔下自动清理落下来的怪物。</p>
 <h3 id="76">7.6 潜行与冻结<a class="headerlink" href="#76" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/fpp sneak bot on       让假人蹲下
+<p><code>text
+/fpp sneak bot on       让假人蹲下
 /fpp sneak bot off      让假人站起来
 /fpp sneak bot toggle   切换蹲下/站立状态
 /fpp freeze bot on      冻结假人，让它原地站住不动
-/fpp freeze bot off     解除冻结
-</code></pre></div>
+/fpp freeze bot off     解除冻结</code>text</p>
 <p>蹲下状态有时在建筑或高处作业时很有用，比如让假人蹲在高台边缘干活，不容易滑落；冻结则适合在需要假人"乖乖站着"的场合使用，比如让它站在某个特定位置当"人形柱子"，或者防止它在干活时乱跑。</p>
 <h3 id="77">7.7 停止任务<a class="headerlink" href="#77" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/fpp stop bot       停止某个假人的所有任务
-/fpp stop all       停止你所有假人的任务
-</code></pre></div>
+<p><code>text
+/fpp stop bot       停止某个假人的所有任务
+/fpp stop all       停止你所有假人的任务</code>text</p>
 <p>当假人正在做的任务已经完成、或者发现它在做无用功时，用这条指令让它停下来，省电也省心。停止任务只是让假人停下来，并不会删除假人，你随时可以给它安排新任务。</p>
 <h3 id="78">7.8 让假人搜索方块<a class="headerlink" href="#78" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/fpp find bot 钻石矿石 --radius 20
-/fpp find bot 绿宝石矿石 --radius 30 --count 5
-</code></pre></div>
+<p><code>text
+/fpp find bot 钻石矿石 --radius 20
+/fpp find bot 绿宝石矿石 --radius 30 --count 5</code>text</p>
 <p>让假人在指定半径范围内搜索某种方块，并报告找到的位置。想找矿、找特定建筑方块、或者确认某个区域里有没有某种资源时，都可以让假人先帮你探一探。<code>--radius</code> 控制搜索半径，<code>--count</code> 控制最多报告多少个位置。</p>
 <hr />
 <h2 id="_8">八、背包与存储<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <h3 id="81">8.1 查看假人背包<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/fpp inventory bot
-</code></pre></div>
+<p><code>text
+/fpp inventory bot</code>text</p>
 <p>（也可以简写为 <code>/fpp inv bot</code>）</p>
 <p>这条指令会直接打开假人的背包，你可以查看它身上带了什么、有没有贵重物品，也可以往里面放进物品。在假人干活之前先检查一下它的装备和随身物品，能避免不少麻烦。</p>
 <h3 id="82">8.2 假人的存储箱<a class="headerlink" href="#82" title="Permanent link">&para;</a></h3>
 <p>假人可以把挖到的东西存进附近的箱子里，避免物品掉一地：</p>
-<div class="highlight"><pre><span></span><code>/fpp storage bot --list            查看假人已登记的存储箱
+<p><code>text
+/fpp storage bot --list            查看假人已登记的存储箱
 /fpp storage bot --enable 箱子名   让假人记住这个箱子（先点一下要登记的箱子）
-/fpp storage bot --deposit         把假人背包里的物品存入存储箱
-</code></pre></div>
+/fpp storage bot --deposit         把假人背包里的物品存入存储箱</code>text</p>
 <p>配合自动挖掘或自动收菜使用效果最好：假人挖到的东西可以直接存进箱子，你只需要定时去把箱子里的收获清走就行。这套"自动干活 + 自动入库"的组合，是假人挂机玩法的核心。</p>
 <h3 id="83">8.3 物品管理建议<a class="headerlink" href="#83" title="Permanent link">&para;</a></h3>
 <ul>
@@ -2403,19 +2403,19 @@
 <hr />
 <h2 id="_9">九、经验管理<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <p>假人在打怪、挖矿的过程中会积累经验值。这些经验值你可以随时收走：</p>
-<div class="highlight"><pre><span></span><code>/fpp xp bot
-</code></pre></div>
+<p><code>text
+/fpp xp bot</code>text</p>
 <p>这样假人辛辛苦苦攒下的经验就不会白白浪费，你可以用来附魔装备、修复工具，或者做其他需要经验的事情。</p>
 <p>如果你经常让假人在刷怪塔挂机，建议养成定时收经验的好习惯：每隔一段时间回来用 <code>/fpp xp bot</code> 收走经验，积少成多，附魔装备就再也不缺经验了。</p>
 <hr />
 <h2 id="_10">十、租赁假人（按小时付费）<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <p>服务器开放了假人租赁功能。你可以使用游戏货币，按小时租用假人，时间一到假人会自动清理，特别适合需要长时间挂机的玩家，也省去了自己记着手动删除的麻烦。</p>
 <h3 id="101">10.1 常用指令<a class="headerlink" href="#101" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/fpp rent buy 4          花 400 货币，直接租一个 4 小时的假人
+<p><code>text
+/fpp rent buy 4          花 400 货币，直接租一个 4 小时的假人
 /fpp rent extend bot 3   给已有的假人续费 3 小时
 /fpp rent info           查看自己所有假人的剩余时间
-/fpp rent clear bot      提前清掉某个租用的假人
-</code></pre></div>
+/fpp rent clear bot      提前清掉某个租用的假人</code>text</p>
 <p>这几条指令非常好记：<code>buy</code> 是购买新的，<code>extend</code> 是给已有的续时间，<code>info</code> 是查看剩余时间，<code>clear</code> 是提前结束。只要记住这四个动作，租赁功能就基本掌握了。</p>
 <h3 id="102">10.2 租赁规则<a class="headerlink" href="#102" title="Permanent link">&para;</a></h3>
 <ul>
@@ -2443,8 +2443,8 @@
 <hr />
 <h2 id="_11">十一、设置界面与个性化<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <h3 id="111">11.1 打开设置界面<a class="headerlink" href="#111" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/fpp settings bot
-</code></pre></div>
+<p><code>text
+/fpp settings bot</code>text</p>
 <p>打开假人的交互式设置界面，可以调整假人的名字、行为方式、战斗配置、点击间隔等各项参数。界面里按分类展示，翻一翻就能找到想改的选项。</p>
 <h3 id="112">11.2 可以调整什么<a class="headerlink" href="#112" title="Permanent link">&para;</a></h3>
 <ul>
