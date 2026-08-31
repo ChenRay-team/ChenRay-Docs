@@ -284,6 +284,58 @@ Metro 插件对线路、站点、传送门实行统一的信任与所有权机�
 
 ---
 
+## 附录：地铁线路与站点一览
+
+> 本附录依据服务器 Metro 插件线路 / 站点数据整理（2026-08-31），供玩家乘车参考。
+
+### 线路示意图
+
+```mermaid
+%%{init: {"theme": "base", "themeVariables": {"fontSize": "15px"}}}%%
+graph LR
+    YLN[雅乐兰市南站] --- YL[雅乐兰市站] --- YLB[雅乐兰市北站] --- AQ[阿清公会] --- MGY[蘑菇岛工业园] --- MX[蔓夏站] --- SJZX[世界中心站] --- LC[林场·铁道部测试场] --- SYXQ[实验新区]
+    SJZX --- MDCSM[末地传送门站] --- WZZD[未知站点]
+    MGY --- MGXQ[蘑菇岛新区]
+    MX --- TL[桃涟站] --- HC[换乘站] --- ELYTA[伊莱塔工业园]
+    HC --- SMGH[神秘公会]
+
+    classDef line1 fill:#E60012,color:#fff,stroke:#fff
+    classDef line2 fill:#0072BC,color:#fff,stroke:#fff
+    classDef line3 fill:#00A650,color:#fff,stroke:#fff
+    classDef line4 fill:#00A0B0,color:#fff,stroke:#fff
+    classDef line5 fill:#7B5EA7,color:#fff,stroke:#fff
+    classDef transfer fill:#fff,color:#333,stroke:#333,stroke-width:2px
+
+    class YLN,YL,YLB,AQ,LC,SYXQ line1
+    class MDCSM,WZZD line2
+    class TL,ELYTA line3
+    class SMGH line4
+    class MGXQ line5
+    class MGY,MX,SJZX,HC transfer
+
+    linkStyle 0,1,2,3,4,5,6,7 stroke:#E60012,stroke-width:3px
+    linkStyle 8,9 stroke:#0072BC,stroke-width:3px
+    linkStyle 10 stroke:#7B5EA7,stroke-width:3px
+    linkStyle 11,12,13 stroke:#00A650,stroke-width:3px
+    linkStyle 14 stroke:#00A0B0,stroke-width:3px
+```
+
+### 线路与站点
+
+| 线路 | 运营方向 | 途经站点（按序） |
+|------|----------|------------------|
+| **1号线** | 雅乐兰市南 ↔ 实验新区 | 雅乐兰市南站 → 雅乐兰市站 → 雅乐兰市北站 → 阿清公会 → 蘑菇岛工业园 → 蔓夏站 → 世界中心站 → 林场·铁道部测试场 → 实验新区 |
+| **2号线** | 未知站点 ↔ 世界中心 | 未知站点 → 末地传送门站 → 世界中心站 |
+| **3号线（观光线）** | 蔓夏 ↔ 伊莱塔工业园 | 蔓夏 → 桃涟站 → 换乘站 → 伊莱塔工业园 |
+| **观光线支线** | 换乘站 ↔ 神秘公会 | 换乘站 → 神秘公会 |
+| **蘑菇岛支线** | 蘑菇岛工业园 ↔ 蘑菇岛新区 | 蘑菇岛工业园 → 蘑菇岛新区 |
+
+**换乘站：** 世界中心站（1 / 2 号线）、蔓夏站（1 / 3 号线，观光线站名为「蔓夏」）、蘑菇岛工业园（1 号线 / 蘑菇岛支线）、换乘站（3 号线 / 观光线支线）。
+
+**测试 / 未接入客运线路：** speedtest（测速线）、lt（t1/t2）、cs1（djdf）、ces、建筑世界（空线）。
+
+---
+
 **ChenRay 交通部门**
 
 2026.8.30
